@@ -1,0 +1,14 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.owner}}</h4>
+  <h4>{{ product.pricePerMonth| currency }}</h4>
+  <h4>{{ product.totalPrice| currency }}</h4>
+  <p>{{ product.acqPrice | currency }}</p>
+</div>
+<!-- owner: 'Apple',
+name: 'iPhone 13',
+totalPrice: 829,
+pricePerMonth: 34,
+acqPrice: 13 -->
